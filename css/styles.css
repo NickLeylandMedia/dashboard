@@ -1,25 +1,47 @@
 /* Main Elements */
 body {
-    background-color: navy;
+    background-color: #2a264d;
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    
+}
+
+
+/* Class Selectors */
+.backbutton {
+    font-family: 'Montserrat';
+    color: white;
+    border: 3px solid black;
+    padding: 10px 20px 10px 20px;
+    background-color: chocolate;
+}
+
+
+
+/* ID Selectors */
 #main-button-menu {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+    width: 80vw;
 }
 
-#btestcont {
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+#footer {
+    height: 5vh;
+    width: 100%;
+    background: yellow;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
 }
-
 
 /* Small Screen Formatting */
 @media only screen and (max-width: 600px) {
@@ -29,7 +51,16 @@ body {
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
+        width: 80vw;
+    }
+
+    .mainbutton {
+        min-width: 350px;
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
     }
 }    
 
@@ -39,10 +70,12 @@ body {
     padding: 10px 20px 10px 20px;
     border: 1px solid black;
     margin-top: 2.5%;
+    margin-left: 15px;
     margin-bottom: 2.5%;
     font-family: 'Roboto Slab';
-    background-color: purple;
-    color: white;
+    background-color: #e3b030;
+    color: #cf25e6;
     font-weight: bolder;
     text-align: center;
+    width: 35vw;
 }
