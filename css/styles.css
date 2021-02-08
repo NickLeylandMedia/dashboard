@@ -11,6 +11,11 @@ a {
     
 }
 
+/* Sections */
+#dropdown-menu {
+    margin-top: 2%;
+}
+
 
 /* Class Selectors */
 .backbutton {
@@ -21,7 +26,48 @@ a {
     background-color: chocolate;
 }
 
+/* Class Selectors - resources.html collapsible */
+.collapsible {
+    background-color: #eee;
+    border: 3px solid black;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
 
+.active, .collapsible:hover{
+    background-color: #ccc;
+}
+
+.content {
+    padding-left: 50px;
+    display: none;
+    overflow: hidden;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content a {
+    color: white;
+    text-decoration: underline;
+}
+
+.categorydrop {
+    margin-top: 10px;
+}
 
 /* ID Selectors */
 #main-button-menu {
@@ -43,6 +89,9 @@ a {
     text-align: center;
 }
 
+/* Style Switcher */
+
+
 /* Small Screen Formatting */
 @media only screen and (max-width: 600px) {
     #main-button-menu {
@@ -59,7 +108,7 @@ a {
     }
 
     #footer {
-        position: absolute;
+        position: relative;
         bottom: 0;
     }
 }    
@@ -74,8 +123,12 @@ a {
     margin-bottom: 2.5%;
     font-family: 'Roboto Slab';
     background-color: #e3b030;
-    color: #cf25e6;
+    color: #2d65a6;
     font-weight: bolder;
     text-align: center;
     width: 35vw;
 }
+
+
+
+
