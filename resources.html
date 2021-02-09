@@ -25,6 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&display=swap">
   <!--FONTS-->
 
   <meta name="theme-color" content="#fafafa">
@@ -38,6 +39,28 @@
     </header> 
 
     <section id="dropdown-menu">
+
+      <div class="categorydrop">
+        <button type ="button" class="collapsible" onclick="collapseCategory()">CSS</button>
+        <div class="content">
+          <ul>
+            <li>+ <a href="https://flexbox.malven.co">Flexbox</a></li>
+            <li>+ Item Two</li>
+            <li>+ Item Three</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="categorydrop">
+        <button type ="button" class="collapsible" onclick="collapseCategory()">HTML</button>
+        <div class="content">
+          <ul>
+            <li>+ <a href="https://flexbox.malven.co">Flexbox</a></li>
+            <li>+ Item Two</li>
+            <li>+ Item Three</li>
+          </ul>
+        </div>
+      </div>
 
       <div class="categorydrop">
         <button type ="button" class="collapsible" onclick="collapseCategory()">Javascript</button>
@@ -55,16 +78,18 @@
         <div class="content">
           <ul>
             <li>+ <a href="https://keycode.info">Event Keycodes</a></li>
-            <li>+ Item Two</li>
-            <li>+ Item Three</li>
+            <li>+ <a href="https://keycode.info">Event Keycodes</a></li>
+            <li>+ <a href="https://keycode.info">Event Keycodes</a></li>
           </ul>
         </div>
       </div>
-      
+
     </section>  
   
-    <footer id="footer">
-      <h1><a class="backbutton" href="index.html">BACK TO HOME</a></h1>
+    <footer id="footer" class="buttFoot">
+      <div id="backbuttcont">
+        <button class="backbutton">BACK TO HOME</button>
+      </div>
     </footer>
 
   <!-- Scripts -->
