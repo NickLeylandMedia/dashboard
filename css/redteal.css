@@ -1,0 +1,149 @@
+/* Main Elements */
+body {
+    background-color: #2a264d;
+    width: 100vw;
+    height: 80vh;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+/* Sections */
+#dropdown-menu {
+    margin-top: 2%;
+}
+
+
+/* Class Selectors */
+.backbutton {
+    font-family: 'Montserrat';
+    color: white;
+    border: 3px solid black;
+    font-size: 12pt;
+    padding: 5px 10px 5px 10px;
+    background-color: chocolate;
+}
+
+/* Class Selectors - resources.html collapsible */
+.collapsible {
+    background-color: rgba(70, 61, 61, 0.486);
+    border: 3px solid black !important;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-family: 'Roboto Slab';
+    font-size: 15px;
+    font-weight: bolder;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.active, .collapsible:hover{
+    background-color: rgb(151, 38, 38);
+}
+
+.content {
+    padding-left: 50px;
+    display: none;
+    overflow: hidden;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+}
+
+.content ul {
+    list-style: none;
+}
+
+.content a {
+    color: white;
+    text-decoration: underline;
+    font-family: 'Exo 2';
+    font-weight: bolder;
+}
+
+.categorydrop {
+    margin-top: 10px;
+}
+
+/* ID Selectors */
+#main-button-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    width: 100vw;
+}
+
+#footer {
+    height: 5vh;
+    width: 100%;
+    background: yellow;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+
+#stylecont {
+    padding-top: 1.5vh;
+}
+
+
+
+#backbuttcont {
+    padding-top: .75vh;
+}
+/* Style Switcher */
+
+
+/* Small Screen Formatting */
+@media only screen and (max-width: 600px) {
+    #main-button-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80vw;
+    }
+
+    .mainbutton {
+        
+    }
+
+    #footer {
+        position: absolute;
+        bottom: 0;
+    }
+}    
+
+
+/* Buttons */
+.mainbutton {
+    padding: 10px 20px 10px 20px;
+    border: 1px solid black;
+    margin-top: 2.5%;
+    margin-left: 15px;
+    margin-bottom: 2.5%;
+    font-family: 'Roboto Slab';
+    background-color: #e3b030;
+    color: #2d65a6;
+    font-weight: bolder;
+    text-align: center;
+    min-width: 35vw;
+    max-width: 80vw;
+}
+
+
+
+
