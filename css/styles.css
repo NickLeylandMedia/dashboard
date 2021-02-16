@@ -74,6 +74,42 @@ a {
     margin-top: 10px;
 }
 
+/* Class Selectors */
+.title {
+    grid-area: header;
+    text-align: center;
+    font-size: calc(7vw + 2rem);
+    font-weight: 900;
+    margin: -0.3em 0 0.5em;
+}
+
+.task-list {
+    line-height: 1.7;
+    font-size: 1.2rem;
+    list-style: circle;
+    padding-left: 1.1em;
+}
+
+.new {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    border-bottom: 1px solid currentColor;
+    font-size: inherit;
+}
+
+.active-list {
+    font-weight: 700;
+}
+
+.all-tasks {
+    grid-area: lists;
+}
+
+.todo-list{
+    grid-area: active;
+}
+
 /* ID Selectors */
 #main-button-menu {
     display: flex;
@@ -102,6 +138,14 @@ a {
 
 #backbuttcont {
     padding-top: .75vh;
+}
+
+#todo {
+    display: grid;
+    grid:
+        "header header header header" auto
+        "...... lists  active ......" auto /
+        1fr minmax(100px, 300px) minmax(250px, 500px) 1fr;
 }
 /* Style Switcher */
 
