@@ -11,6 +11,11 @@ a {
     
 }
 
+[type="checkbox"] {
+    opacity: 0;
+    position: absolute;
+}
+
 /* Sections */
 #dropdown-menu {
     margin-top: 2%;
@@ -90,12 +95,57 @@ a {
     padding-left: 1.1em;
 }
 
+.list-name {
+    cursor: pointer;
+}
+
+.list-name:hover {
+    opacity: 0.7;
+}
+
 .new {
     background: transparent;
     border: 0;
     color: inherit;
     border-bottom: 1px solid currentColor;
     font-size: inherit;
+    transition: border-bottom 150ms ease-in;
+    outline: none;
+    order: 2;
+}
+
+.new:focus {
+    border-bottom-width: 3px;
+}
+
+.new:focus::placeholder {
+    opacity: 0.2;
+}
+
+.new.list {
+    font-size: 1.1rem;
+}
+
+.new.task {
+    margin-bottom: 0;
+}
+
+.btn {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+}
+
+.btn.create {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: 0.25em;
+}
+
+.btn.create:hover {
+    opacity: 0.7;
 }
 
 .active-list {
@@ -108,6 +158,123 @@ a {
 
 .todo-list{
     grid-area: active;
+    background: grey;
+    color: black;
+    padding: 2rem;
+}
+
+.todo-header {
+    background: lightgrey;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.list-title {
+    margin: 0;
+}
+
+.task-count {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.todo-body {
+    padding: 2rem;
+    position: relative;
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: .75em;
+    height: .75em;
+    cursor: pointer;
+    border: 2px solid currentColor;
+    border-radius: 50%;
+    margin-right: 0.75em;
+    transform: scale(1);
+    transition: transform 300ms ease-in-out;
+}
+
+.task label {
+    display: flex-inline;
+    align-items: center;
+    position: relative;
+}
+
+.task::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    bottom: -0.5em;
+    height: 1px;
+    background: currentColor;
+    opacity: 0.1;
+}
+
+.task {
+    position: relative;
+    margin-bottom: 1.25em;
+}
+
+.task:hover .custom-checkbox,
+[type="checkbox"]:focus + label .custom-checkbox {
+    transform: scale(1.2);
+    color: red;
+}
+
+[type="checkbox"]:checked + label .custom-checkbox {
+   background: blue;
+   border-color: blue;
+   box-shadow: inset 0 0 0px 2px white;
+}
+
+[type="checkbox"]:checked + label {
+    opacity: 0.5;
+}
+
+.task label::after {
+    content: "";
+    position: absolute;
+    left: 1.75em;
+    right: 0;
+    top: 50%;
+    height: 3px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 150ms ease-in-out;
+}
+
+[type="checkbox"]:checked + label::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.new-task-creator .create {
+    color: cyan;
+}
+
+.delete-stuff {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -65px;
+    color: red;
+}
+
+.btn.delete {
+    opacity: 0.8;
+    font-size: 1rem;
+    transition: color 200ms;;
+}
+
+.btn.delete:hover {
+    color: orangered;
 }
 
 /* ID Selectors */
