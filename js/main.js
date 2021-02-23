@@ -16,7 +16,3 @@ for (i = 0; i < coll.length; i++) {
 }
 }
 
-//To-Do List:
-const listsContainer =document.querySelector('[data-lists]')
-
-let lists = []

@@ -150,6 +150,7 @@ a {
 
 .active-list {
     font-weight: 700;
+    color: red;
 }
 
 .all-tasks {
@@ -160,7 +161,6 @@ a {
     grid-area: active;
     background: grey;
     color: black;
-    padding: 2rem;
 }
 
 .todo-header {
