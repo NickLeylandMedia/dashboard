@@ -16,3 +16,24 @@ for (i = 0; i < coll.length; i++) {
 }
 }
 
+//Daily Tasks
+var sundayTask = []
+var mondayTask = []
+var tuesdayTask = []
+var wednesdayTask = []
+var thursdayTask = []
+var fridayTask = []
+var saturdayTask = []
+
+
+function render() {
+  document.getElementById('sundayItemText') = sundayTask
+  document.getElementById('sundayItemText') = sundayTask
+  document.getElementById('sundayItemText') = sundayTask
+  document.getElementById('sundayItemText') = sundayTask
+  document.getElementById('sundayItemText') = sundayTask
+  document.getElementById('sundayItemText') = sundayTask
+  document.getElementById('sundayItemText') = sundayTask
+}
+
+
